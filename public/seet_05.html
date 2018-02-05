@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>大山不動産賃貸物件5</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+
+</head>
+<body>
+	
+	<form action="php/mailform.php" method="post" id="mail_form">
+				
+		<dl>
+			<div>
+				<span>営業報告書①</span>	
+			</div>
+			
+			<dt>所属<span></span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /></dd>
+			
+			<dt>名前（提出者氏名）<span></span></dt>
+			<dd class="required"><input type="text" id="midle" name="midle" value="" /></dd>
+			
+			<dt>件名<span>Name</span></dt>
+			<dd class="required"><input type="text" id="billd_name" name="billd_name" value="" /></dd>
+			
+			<dt>報告先<span>location</span></dt>
+			<dd>
+			<input type="text" id="small" name="small" value="000000" /> <input type="radio" class="gender" name="gender" value="永田　かおり" /></label>確認者の名前
+			</dd>
+			
+			<dt>本日のアリア<span></span></dt>				
+				<dd class="required">
+					<input type="text" id="midle" name="midle" value="区" /><br/>
+					<input type="text" id="midle" name="midle" value="町名" />
+				</dd>			
+			<dt>調査先<span></span></dt>
+			<dd>
+				<input type="text" id="syozai" name="syozai" value="000000" /> <input type="text" id="read_2" name="read_2" value="東京都" />
+				<input type="text" id="midle" name="midle" value="足立区" />
+				<input type="text" id="midle" name="midle" value="扇" />
+			</dd>
+			
+			<dt>日時<span></span></dt>
+			<dd>
+				<input type="text" id="midle" name="midle" value="" />
+			</dd>
+			
+			<dt>内容<span></span></dt>
+			<dd>
+				<ul>
+					<li>
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>空き地
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>空家
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>空アパート
+					</li>
+				</ul>
+			</dd>
+		</dl>
+		
+		<p id="form_submit"><input type="button" id="form_submit_button" value="詳しくの追加" /></p>		
+		<p id="form_submit"><input type="button" id="form_submit_button" value="次へ" /></p>
+	</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+
+
+<!-- jquery.autoKana.jsとajaxzip3は　入力エラー　/　アドレス入力に関してほかのとこから取ったファイルです。 LEE-->	
+	
+<!-- 自動入力ライブラリここから　id名は自由に変更してください LEE-->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( '#billd_name', '#read_1', {
+			katakana: false
+		});
+		$.fn.autoKana( '#billd_name', '#read_2', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- 自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　住所自動入力ライブラリここから LEE-->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　ライブラリここから LEE-->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ライブラリここまで -->
+
+</body>
+</html>

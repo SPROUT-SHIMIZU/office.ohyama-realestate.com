@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>大山不動産賃貸物件</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+
+</head>
+<body>
+	
+	<form action="php/mailform.php" method="post" id="mail_form">
+				
+		<dl>
+			<div>
+				<span>賃貸物件仲買依頼書①</span>	
+			</div>
+			
+			<dt>物件名<span>Property Name</span></dt>
+			<dd><input type="text" id="billd_name" name="billd_name" value="" /></dd>
+			
+			<dt>号室<span>Number</span></dt>
+			<dd class="required"><input type="text" id="number" name="number" value="" /></dd>
+			
+			<dt>所在地<span>location</span></dt>
+			<dd>
+				<input type="text" id="syozai" name="syozai" value="000000" /> <input type="text" id="read_2" name="read_2" value="東京都" />
+				<input type="text" id="midle" name="midle" value="足立区" />
+				<input type="text" id="midle" name="midle" value="扇" />
+			</dd>
+			
+			<dt>広告費<span>Advertisement cost</span></dt>
+			<dd>
+				<ul>
+					<li>
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>有
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>無
+					</li>
+				</ul>
+			</dd>
+			
+			<dt>物件<span>Property</span></dt>
+			<dd>
+				<ul>
+					<li>
+						<label><input type="radio" class="target" name="target" value="" /></label>専任
+						<label><input type="radio" class="target" name="target" value="" /></label>一般
+					</li>					
+				</ul>
+			</dd>
+			
+			<dt>物件種類<span>Property Type</span></dt>
+			<dd>
+				<select id="Property" name="Property">
+					<option value="">選択してください</option>
+					<option value="住宅">住宅</option>
+					<option value="店舗">店舗</option>
+					<option value="事務所">事務所</option>
+					<option value="駐車場">駐車場</option>
+					<option value="その他">その他</option>
+				</select>
+			</dd>
+			
+			<dt>築年数<span>Years of construction</span></dt>
+			<dd class="required"><input type="text" id="smalls" name="smalls" value="" />年
+				<input type="text" id="smalls" name="smalls" value="" />月
+				<input type="text" id="smalls" name="smalls" value="" />日
+			</dd>
+			
+			<dt>階建/物件総戸数/間取り<span>Floor/Total number of houses/Interval</span></dt>
+			<dd class="required"><input type="text" id="smalls" name="smalls" value="" />階
+				<input type="text" id="smalls" name="smalls" value="" />戸
+				<input type="text" id="smalls" name="smalls" value="" />㎡
+			</dd>
+			
+			<dt>建築規模<span>Building scale</span></dt>
+			<dd>
+				<select id="scale" name="scale">
+					<option value="">選択してください</option>
+					<option value="木">木</option>
+					<option value="鉄骨">鉄骨</option>
+					<option value="RC">RC</option>
+					<option value="SRC">SRC</option>
+					<option value="その他">その他</option>
+				</select>
+			</dd>
+			
+			<dt>建物種類<span>Building type</span></dt>
+			<dd>
+				<select id="Property" name="Property">
+					<option value="">選択してください</option>
+					<option value="アパート">アパート</option>  
+					<option value="賃貸マンション">賃貸マンション</option>
+					<option value="分譲マンション">分譲マンション</option>
+					<option value="ビル">ビル</option>
+					<option value="貸家">貸家</option>
+					<option value="その他">その他</option>
+				</select>
+			</dd>
+			
+			<dt>管理先<span>Inquiry Kind</span></dt>
+			<dd>
+				<ul>
+					<li>
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>大家
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>当社
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>他社
+					</li>
+				</ul>
+			</dd>			
+			
+			<dt>会社名<span>Number</span></dt>
+			<dd class="required"><input type="text" id="small2" name="small2" value="" /></dd>
+			
+			<dt>電話番号<span>Phone Number</span></dt>
+			<dd><input type="tel" id="phone" name="phone" value="" /></dd>
+			
+			<dt>最寄り駅<span>Nearest station</span></dt>
+			<dd>
+				<select id="small" name="small">
+					<option value="">選択してください</option>
+					<option value="">山手線</option>
+					<option value="">山手線</option>
+					<option value="">山手線</option>
+					<option value="">山手線</option>
+					<option value="その他">その他</option>
+				</select>
+				<span>線</span>
+				<select id="small" name="small">
+					<option value="">選択してください</option>
+					<option value="">秋葉原</option>
+					<option value="">秋葉原</option>
+					<option value="">秋葉原</option>
+					<option value="">秋葉原</option>
+					<option value="その他">その他</option>
+				</select>
+				<span>駅</span>				
+			</dd>
+			
+			<dt>徒歩<span>Walk</span></dt>
+			<dd>
+			<select id="small" name="small">
+					<option value="">選択してください</option>
+					<option value="">3分</option>
+					<option value="">5分</option>
+					<option value="">10分</option>
+					<option value="">20分</option>
+					<option value="その他">その他</option>
+				</select>
+				<span>分</span>
+			</dd>
+		</dl>
+		
+		<p id="form_submit"><input type="button" id="form_submit_button" value="最寄り駅追加" /></p>		
+		<p id="form_submit"><input type="button" id="form_submit_button" value="次へ" /></p>
+	</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+
+
+<!-- jquery.autoKana.jsとajaxzip3は　入力エラー　/　アドレス入力に関してほかのとこから取ったファイルです。 LEE-->	
+	
+<!-- 自動入力ライブラリここから　id名は自由に変更してください LEE-->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( '#billd_name', '#read_1', {
+			katakana: false
+		});
+		$.fn.autoKana( '#billd_name', '#read_2', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- 自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　住所自動入力ライブラリここから LEE-->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　ライブラリここから LEE-->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ライブラリここまで -->
+
+</body>
+</html>

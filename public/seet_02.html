@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>大山不動産賃貸物件2</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+
+</head>
+<body>
+
+	<form action="php/mailform.php" method="post" id="mail_form">
+		<dl>
+			<div>
+				<span>賃貸物件仲買依頼書②</span>	
+			</div>
+			
+			<dt>貸主<span>Lender</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /></dd>
+			
+			<dt>電話番号<span>Phone Number</span></dt>
+			<dd><input type="tel" id="phone" name="phone" value="" /></dd>
+			
+			<dt>FAX<span>Phone Number</span></dt>
+			<dd><input type="tel" id="phone" name="phone" value="" /></dd>
+			
+			<dt>携帯<span>Mobile phone</span></dt>
+			<dd><input type="tel" id="phone" name="phone" value="" /></dd>
+			
+			<dt>貸主住所<span>Lender address</span></dt>
+			<dd>
+				<input type="text" id="syozai" name="syozai" value="000000" /> <input type="text" id="read_2" name="read_2" value="東京都" />
+				<input type="text" id="midle" name="midle" value="なんちゃら" />
+				<input type="text" id="midle" name="midle" value="かんちゃら" />
+			</dd>
+			
+			<dt>
+				<dd>
+					<p>賃貸条件</p>
+				</dd>
+			</dt>
+			
+			<dt>賃料<span>Rent</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>管理費<span>Administrative expense</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>礼金<span>Reincense</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>敷金<span>Deposit</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>更新<span>Update</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>保証金<span>Deposit</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>償却<span>Amortization</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>円</span>
+			</dd>
+		
+			<dt>鍵預り　No.<span>Key deposit No.</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" /><span>本</span>
+			</dd>
+			
+			<dt>支払い方法<span>Payment method</span></dt>
+			<dd>
+				<ul>
+					<li>
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>振込
+						<label class="mg-small"><input type="radio" class="gender" name="gender" value="" /></label>持参
+					</li>
+				</ul>
+			</dd>
+	
+			<dt>
+				<dd>
+					<p>振込先</p>
+				</dd>
+			</dt>
+	
+			<dt>銀行名<span>Bank name</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" />
+			</dd>
+	
+			<dt>支店名<span>Branch name</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" />
+			</dd>
+	
+			<dt>口座種別<span>Branch name</span></dt>
+			<dd>
+				<select id="scale" name="scale">
+					<option value="">選択してください</option>
+					<option value="普通">普通</option>
+					<option value="当座">当座</option>
+				</select>
+			</dd>
+	
+			<dt>口座番号<span>Account number</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" />
+			</dd>
+	
+			<dt>口座名義人<span>Account holder</span></dt>
+			<dd><input type="text" id="midle" name="midle" value="" />様
+			</dd>
+		</dl>
+			<p id="form_submit"><input type="button" id="form_submit_button2" value="戻る" /><input type="button" id="form_submit_button3" value="登録" /></p>
+	</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+
+<!-- jquery.autoKana.jsとajaxzip3は　入力エラー　/　アドレス入力に関してほかのとこから取ったファイルです。 LEE-->	
+
+<!-- 自動入力ライブラリここから　id名は自由に変更してください LEE-->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( '#billd_name', '#read_1', {
+			katakana: false
+		});
+		$.fn.autoKana( '#billd_name', '#read_2', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- 自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　住所自動入力ライブラリここから LEE-->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　ライブラリここから LEE-->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ライブラリここまで -->
+
+</body>
+</html>

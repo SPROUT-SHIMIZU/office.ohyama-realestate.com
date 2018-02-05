@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>大山不動産賃貸物件4</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+
+</head>
+<body>
+	<form action="php/mailform.php" method="post" id="mail_form">
+	<dl>
+		<div>
+			<span>賃貸物件仲買依頼書④</span>	
+		</div>			
+			<p id="form_submit"><input type="button" id="form_submit_button" value="写真の追加" /></p>
+	<div class="box26">
+    	<span class="box-title">物件</span>
+    	<p><i class="fa fa-camera-retro fa-5x"></i></p>
+	</div>
+	</dl>		
+		<p id="form_submit"><input type="button" id="form_submit_button2" value="戻る" /><input type="button" id="form_submit_button3" value="登録" /></p>
+	</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+
+<!-- jquery.autoKana.jsとajaxzip3は　入力エラー　/　アドレス入力に関してほかのとこから取ったファイルです。 LEE-->	
+<!-- 自動入力ライブラリここから　id名は自由に変更してください LEE-->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( '#billd_name', '#read_1', {
+			katakana: false
+		});
+		$.fn.autoKana( '#billd_name', '#read_2', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- 自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　住所自動入力ライブラリここから LEE-->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- id名は自由に変更してください　ライブラリここから LEE-->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ライブラリここまで -->
+
+</body>
+</html>
